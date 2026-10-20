@@ -11,17 +11,10 @@ jobs:
     runs-on: ubuntu-20.04
 
     strategy:
-      max-parallel: 8
+      max-parallel: 1
       matrix:
         device:
-          - dumpling
-          - cheeseburger
-          - joan
-          - chiron
           - sagit
-          - htc_ocmdtwl
-          - mata
-          - nx563j
 
     steps:
       - name: Checkout repository
